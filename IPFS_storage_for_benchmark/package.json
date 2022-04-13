@@ -1,0 +1,16 @@
+{
+  "name": "ipfs_scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pinata.js",
+  "scripts": {
+    "test": "node pinata.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pinata/sdk": "^1.1.23",
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security"
+  }
+}

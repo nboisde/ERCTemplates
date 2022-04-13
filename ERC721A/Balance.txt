@@ -1,0 +1,17 @@
+v1
+1.2
+deploy
+1.1576
+mint -> failed.
+
+v2
+deploy
+1.1186
+mint 1 => bytes ok.
+1.0531
+
+v3 polygon:
+2.3001 before mint.
+mint 1 elem:
+
+

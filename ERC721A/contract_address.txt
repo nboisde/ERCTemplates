@@ -8,3 +8,6 @@ ERC721AICollection on ropsten 1 0xA63E88B96A8e766b19544c2e9E75D8FB58302788
 
 ERC721AI on polygon mumbai 0xcAcE9ccE4AEeaeD279c9aFa64eC2Ced3ac816AEB (imcrement not in the right place.)
 0x56d08c3A1C066963B247f7cFBC07879E7fe13873 polygon, increment after.
+
+Collection metadata test => ERC721A
+0xBE0ED56271495c2D858C8002F406c417f8aeEa5b

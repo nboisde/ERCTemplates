@@ -34,6 +34,10 @@ contract ERC721AI is ERC721A, Ownable {
 			return _tokenURI;
 		}
 
+	function contractURI() public view returns (string memory) {
+		return "https://gateway.pinata.cloud/ipfs/QmYX4HFjyMnSU8DVdSgDVTVL2KLaTCvh4qSrs2uCppXtda";
+	}
+
 	function safeMint(address to, uint256 quantity, string[] memory _uris)
 	external onlyOwner
 	{

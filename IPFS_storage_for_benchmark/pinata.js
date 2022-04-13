@@ -12,11 +12,11 @@ const pinata = pinataSDK(process.env.PINATA_API_KEY, process.env.PINATA_API_SECR
 
 //let res;
 
-const name = "A smooth and colorful painting of a cheetah robot running in a forest_3";
+//const name = "./AIgenerativeART/A smooth and colorful painting of a cheetah robot running in a forest_3";
 //const mintAddress = '0x7902a04Cb3FdE830D4D41EDE819cbAB9321899f1';
+const name = "./BlackMood"
 
-
-const readableStreamForFile = fs.createReadStream("./AIgenerativeART/" + name + '.png');
+const readableStreamForFile = fs.createReadStream(name + '.png');
 const options = {
     pinataMetadata: {
         name: name,

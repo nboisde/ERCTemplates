@@ -68,7 +68,7 @@ pinata.pinFileToIPFS(readableStreamForFile).then((result) => {
 	// 	const http = axios.create({
 	// 		baseURL: "https://api-connect.starton.io/v1",
 	// 		headers: {
-	// 			"x-api-key": 'pk_fe6a6be2e983400aba50c369990fe706',
+	// 			"x-api-key": '',
 	// 		},
 	// 	})
 	// 	http.post('/smart-contract/sc_accdd85cbee047d2b44c4b163bdc24f8/interact',

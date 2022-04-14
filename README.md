@@ -1,8 +1,8 @@
-{
-  "name": "TWO GIRLS",
-  "description": "This collection is a benchmark test on erc721a for multiminting",
-  "image": "https://openseacreatures.io/image.png",
-  "external_link": "https://openseacreatures.io",
-  "seller_fee_basis_points": 1000,
-  "fee_recipient": "0x5468505cb0A39374DaEF9a5f98812C3b03Db6902"
-}
+Benchmark: 
+
+ERC721A 20 mint:
+https://mumbai.polygonscan.com/tx/0x0fee13223218df117b78b3f38a40c0bc9657c22ea8a7c94c9412a69feb36fc5f
+0.039569560829715042 matic
+
+ERC721 20 mint:
+

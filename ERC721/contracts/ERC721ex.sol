@@ -11,6 +11,11 @@ contract ERC721ex is ERC721, Ownable {
   mapping (uint256 => string) private _tokenURIs;
 
   constructor() ERC721("ERC721ex", "721EX") {}
+  
+  function contractURI() public view returns (string memory) {
+    return "https://gateway.pinata.cloud/ipfs/QmYX4HFjyMnSU8DVdSgDVTVL2KLaTCvh4qSrs2uCppXtda";
+  }
+
   function _setTokenURI(uint256 tokenId, string memory _tokenURI)
     internal
     virtual
@@ -30,7 +35,7 @@ contract ERC721ex is ERC721, Ownable {
   }
   function mint(address recipient, string memory uri)
     external onlyOwner
-    returns (uint256)l/// @notice Explain to an end user what this does
+    returns (uint256)/// @notice Explain to an end user what this does
 	/// @dev Explain to a developer any extra details
 	/// @return Documents the return variables of a contract’s function state variable
 	/// @inheritdoc	Copies all missing tags from the base function (must be followed by the contract name)

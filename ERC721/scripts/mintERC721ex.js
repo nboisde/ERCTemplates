@@ -2,11 +2,11 @@ const { getContractFactory } = require("@nomiclabs/hardhat-ethers/types");
 const hre = require("hardhat");
 
 async function main() {
-	const NFT = await hre.ethers.getContractFactory("ERC721AI");
+	const NFT = await hre.ethers.getContractFactory("ERC721ex");
 	const arr = ["https://gateway.pinata.cloud/ipfs/QmdPuHb3iLukHzYsLibyLp8Pf57qxDfDH22dejqyx41cYa", "https://gateway.pinata.cloud/ipfs/QmQnKbabhqsDdSQg6wekeR5wkFXWMZkcBCXegVnQNnKu8U"]
 	//const URL = "https://gateway.pinata.cloud/ipfs/QmdPuHb3iLukHzYsLibyLp8Pf57qxDfDH22dejqyx41cYa";
 	const WALLET_ADDRESS= "0x5468505cb0A39374DaEF9a5f98812C3b03Db6902";
-	const CONTRACT_ADDRESS = "0xBE0ED56271495c2D858C8002F406c417f8aeEa5b";
+	const CONTRACT_ADDRESS = "0xC752aE8e60cBd2E74d48A25e468C56B7aFF689B6";
 	
 	const arr2 = ["https://gateway.pinata.cloud/ipfs/QmesqL3zmJbrQ1sNTt2rVY7HgNQLuNr2YzzyxnGakWvScH",
 	"https://gateway.pinata.cloud/ipfs/QmNY6GG1aA2PBhEhG6Y4xNHFmMsYa2TthbVa8ppfTyjsfi",
@@ -35,7 +35,9 @@ async function main() {
 	//console.log(contract);
 
 	// await contract.owner();
-	await contract.safeMint(WALLET_ADDRESS, 20, arr2);
+	for (let i = 0; i < arr2.length; i++) {
+		await contract.mint(WALLET_ADDRESS, arr2[i]);
+	}
 	console.log("NFT minted:", contract);
 }
 
